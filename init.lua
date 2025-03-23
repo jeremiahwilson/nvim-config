@@ -12,12 +12,10 @@ vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 
 require 'options'
-
 require 'keymaps'
-
 require 'autocommands'
 
-require 'lazy-init' -- enable lazy.nvim package manager
+require 'plugins.lazy' -- enable lazy.nvim package manager
 
 -- [[ INSTALL & CONFIGURE PLUGINS ]]
 -- To check the current status of your plugins, run :Lazy
@@ -741,6 +739,3 @@ require('lazy').setup({
     },
   },
 })
-
--- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
