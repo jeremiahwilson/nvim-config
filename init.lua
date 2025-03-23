@@ -15,17 +15,7 @@ require 'options'
 
 require 'keymaps'
 
--- [[ AUTOCOMMANDS ]]
--- :help lua-guide-autocommands
-
--- Highlight when yanking (copying) text
-vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight when yanking (copying) text',
-  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-})
+require 'autocommands'
 
 -- [[ INSTALL `lazy.nvim` PLUGIN MANAGER ]]
 -- :help lazy.nvim.txt or https://github.com/folke/lazy.nvim
