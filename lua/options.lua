@@ -8,9 +8,8 @@ vim.opt.number = true
 -- Enable mouse mode
 vim.opt.mouse = 'a'
 
--- shows normal, insert, visual, etc.
--- there are probably good statusbar plugins to replace this
-vim.opt.showmode = true
+-- lualine does this already
+vim.opt.showmode = false
 
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
