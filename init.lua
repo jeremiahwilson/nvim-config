@@ -5,6 +5,10 @@
 -- IDEA: shift-J shift-K scroll 25% of visible buffer
 -- so if theres 100 lines showing on my screen and im on line 50, move cursor to line 75
 -- and put line 75 where line 50 was. 
+-- Keybinds that can go: K, Z, X, L, H, r
+-- Honestly don't see myself ever using B or E but we'll see
+-- J is actually useful but I think move it off J. Like move Join to L or something
+-- redo is ctrl-r by default. Not clear what U does so maybe move it to that
 
 -- [[ GLOBALS ]]
 -- `:help mapleader`

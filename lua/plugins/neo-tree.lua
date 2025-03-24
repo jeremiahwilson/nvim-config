@@ -12,14 +12,20 @@ return {
   ---@type neotree.Config?
   opts = {
     -- fill any relevant options here
-    close_if_last_window = true, 
+    close_if_last_window = true,
     window = {
         mappings = {
             ["f"] = "none", -- f is very similar to / and breaks my leap keybind
             ["s"] = "none",
             ["S"] = "none",
-            vim.keymap.set('n', '<leader>n', ':Neotree filesystem reveal right toggle<CR>'), -- <CR> = press enter
         },
     },
+    filesystem = {
+        window = { position = "right" }
+    }
   },
+    config = function(_, opts)
+        require('neo-tree').setup(opts)
+        vim.keymap.set('n', '<leader>n', ':Neotree filesystem reveal right toggle<CR>') -- <CR> = press enter
+    end
 }
