@@ -9,6 +9,7 @@ return {
     telescope.setup {
       defaults = {
         -- Your defaults config here
+        respect_gitignore = true,
         mappings = {
           i = {
             -- Insert mode mappings
