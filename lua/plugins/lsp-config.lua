@@ -11,7 +11,7 @@ return {
 
         config = function()
             require('mason-lspconfig').setup({
-                ensure_installed = { "lua_ls", "ts_ls", "eslint" }
+                ensure_installed = { "lua_ls", "ts_ls", "eslint", "html" }
             })
         end
     },
@@ -25,6 +25,7 @@ return {
             lspconfig.lua_ls.setup({})
             lspconfig.ts_ls.setup({})
             lspconfig.eslint.setup({})
+            lspconfig.html.setup({})
             vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
