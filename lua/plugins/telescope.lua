@@ -30,8 +30,8 @@ return {
       
       -- Set up keymaps
       local keymap = vim.keymap.set
-      keymap('n', 'S', '<cmd>Telescope find_files<cr>', { desc = 'Find files' })
-      keymap('n', 's', '<cmd>Telescope live_grep<cr>', { desc = 'Live grep' })
+      keymap('n', '<leader>S', '<cmd>Telescope find_files<cr>', { desc = 'Find files' })
+      keymap('n', '<leader>s', '<cmd>Telescope live_grep<cr>', { desc = 'Live grep' })
       --keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { desc = 'Find buffers' })
       --keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', { desc = 'Help tags' })
     end,
